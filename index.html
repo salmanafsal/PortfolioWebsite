@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <!-- Use Tailwind via CDN if not using style.css with build -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Use your local CSS if you built Tailwind -->
+  <!-- <link href="style.css" rel="stylesheet"> -->
+
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">My Portfolio</h1>
+      <nav class="space-x-4">
+  <a href="index.html" class="text-gray-700 hover:text-blue-500">Home</a>
+  <a href="projects.html" class="text-gray-700 hover:text-blue-500">Projects</a>
+  <a href="#" class="text-gray-700 hover:text-blue-500">About</a>
+  <a href="#" class="text-gray-700 hover:text-blue-500">Contact</a>
+</nav>
+
+    </div>
+  </header>
+
+  <!-- Main Landing Content -->
+  <main class="flex items-center justify-center min-h-[60vh] text-center px-4">
+    <div>
+      <h2 class="text-4xl font-bold mb-4">Hi, I'm Salman 👋</h2>
+      <p class="text-lg text-gray-700 mb-6">I'm a web developer passionate about building modern, responsive websites and applications.</p>
+      <button id="learnMoreBtn" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition">Learn More</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-10">
+    <div class="max-w-7xl mx-auto px-4 py-6 text-center text-gray-600">
+      &copy; <span id="year"></span> Salman Afsal. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

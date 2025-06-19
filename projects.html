@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects</title>
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header (same as index.html) -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">My Portfolio</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="text-gray-700 hover:text-blue-500">Home</a>
+        <a href="projects.html" class="text-gray-700 hover:text-blue-500">Projects</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500">About</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 py-10">
+    <h2 class="text-3xl font-bold mb-6 text-center">My Projects</h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Project 1 -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">UI Demo: Personalizer Website</h3>
+        <p class="text-gray-600 mb-4">A weather app using OpenWeatherMap API with responsive UI.</p>
+        <a href="frontendprojwebsitebuilder.html" class="text-blue-500 hover:underline">View Project →</a>
+
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Task Manager</h3>
+        <p class="text-gray-600 mb-4">A to-do list app with local storage support and dynamic UI.</p>
+        <a href="#" class="text-blue-500 hover:underline">View Project →</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+        <p class="text-gray-600 mb-4">This portfolio site built using Tailwind CSS, HTML, and JS.</p>
+        <a href="#" class="text-blue-500 hover:underline">View Project →</a>
+      </div>
+
+      <!-- Add more projects as needed -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-10">
+    <div class="max-w-7xl mx-auto px-4 py-6 text-center text-gray-600">
+      &copy; <span id="year"></span> Salman Afsal. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

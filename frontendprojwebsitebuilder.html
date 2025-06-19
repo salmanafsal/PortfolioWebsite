@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App – Project Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">My Portfolio</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="text-gray-700 hover:text-blue-500">Home</a>
+        <a href="projects.html" class="text-gray-700 hover:text-blue-500">Projects</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500">About</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-4 py-10">
+    <h2 class="text-3xl font-bold mb-6 text-center">UI/UX Front end – Demo & Reflection: AI Assisted Website Builder</h2>
+
+    <!-- Video Embed -->
+    <div class="mb-10">
+      <div style="position: relative; padding-bottom: 64.61077844311377%; height: 0;">
+        <iframe src="https://www.loom.com/embed/1548608fc07249b4b7446bb3b03874b0?sid=aeb277fe-2a28-4278-8a2e-e55fcf05d780" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+      </div>
+    </div>
+
+    <!-- STAR Reflection -->
+    <section class="bg-white p-6 rounded-lg shadow mb-10">
+      <h3 class="text-2xl font-bold mb-4">STAR Reflection: Front-End Development for AI-Assisted Website Builder</h3>
+
+      <p class="mb-4"><strong>Situation:</strong> Merchants using Clover websites were encountering significant difficulties and manual effort when populating their sites with detailed information about their services or items. A key pain point identified through product team surveys was the time-consuming process of crafting compelling "About Us" sections and personalized welcome messages. Additionally, merchants struggled to source relevant and high-quality images for their websites, leading to generic or visually unappealing online presences.
+</p>
+
+      <p class="mb-4"><strong>Task:</strong> My primary task was to design and implement the user-facing interface for the AI-assisted website builder. This involved creating an intuitive and efficient front-end that would allow merchants to easily leverage AI capabilities to:
+Generate rich, descriptive content for their "About Us" sections based on minimal input.
+Create personalized welcome messages tailored to their specific business.
+Obtain AI-generated images suitable for their website pictures.
+The front-end needed to seamlessly integrate with the underlying AI models and Clover's existing infrastructure, ensuring a smooth and responsive user experience while maintaining the platform's native look and feel.
+ </p>
+
+      <p class="mb-4"><strong>Action:</strong> On the front-end, I utilized HTML for structuring the web pages, CSS for styling, and JavaScript for interactive elements and logic. Key actions included:
+UI Design and Implementation: I developed clean and user-friendly interfaces with HTML and CSS to guide merchants through the content generation process. This included creating input fields for merchant descriptions, clear buttons for triggering AI generation, and dedicated areas for displaying the generated text and images. Emphasis was placed on responsive design to ensure optimal viewing across various devices.
+Clover Native UI Libraries Integration: To maintain consistency with the Clover ecosystem and accelerate development, I extensively used Clover native UI libraries. This ensured that the visual components, such as input fields, buttons, and display cards, aligned perfectly with the existing platform's design language, providing a familiar and integrated experience for merchants.
+API Interaction with JavaScript: I implemented the core logic in JavaScript to handle the interaction with various APIs.
+Input Capture: Captured merchant inputs from the UI and structured them into payloads for API requests.
+AI Service Communication: Made asynchronous API calls to the backend AI services responsible for generating "About Us" content, welcome messages, and images. I ensured robust error handling and displayed appropriate loading states and success/error messages to the user.
+Content Rendering: Upon receiving responses from the AI APIs, I dynamically rendered the generated text (About Us sections, welcome messages) into designated HTML elements. For AI-generated images, I handled the display of image URLs or base64 data, implementing fallbacks for any potential loading issues.
+Clover Platform Integration: Facilitated the final step of pushing the generated content and images to the merchant's live Clover website by interacting with Clover's specific APIs, ensuring data was correctly formatted and authenticated.
+User Experience Enhancements: Implemented client-side validation for inputs, provided visual feedback during API calls (e.g., spinners), and designed clear informational messages to guide the merchant through the process, improving overall usability.
+ </p>
+
+      <p class="mb-4"><strong>Result:</strong> The developed front-end successfully enabled merchants to automate the population of their Clover websites. The solution significantly reduced the time and effort merchants previously spent on content creation, leading to:
+Enhanced Merchant Efficiency: Merchants can now rapidly populate their websites with professional and relevant content, freeing up their time for core business activities.
+Personalized and Engaging Websites: The ability to generate tailored "About Us" sections and welcome messages allows merchants to create a more personalized and engaging online presence.
+Improved Visual Appeal: Access to AI-generated images ensures that merchants can have high-quality, relevant visuals on their websites, significantly enhancing their site's aesthetics and professionalism.
+Seamless User Experience: By leveraging Clover's native UI libraries and focusing on intuitive design, the front-end provides a cohesive and user-friendly experience that feels like an integral part of the Clover platform.
+Overall, the front-end development successfully bridged the gap between merchant needs and AI capabilities, delivering a powerful and easy-to-use tool that directly addresses a critical pain point for Clover merchants. </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-10">
+    <div class="max-w-7xl mx-auto px-4 py-6 text-center text-gray-600">
+      &copy; <span id="year"></span> Salman Afsal. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
