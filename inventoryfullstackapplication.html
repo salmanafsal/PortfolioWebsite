@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App – Project Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">My Portfolio</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="text-gray-700 hover:text-blue-500">Home</a>
+        <a href="projects.html" class="text-gray-700 hover:text-blue-500">Projects</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500">About</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-4 py-10">
+    <h2 class="text-3xl font-bold mb-6 text-center">Team Rocket - Inventory App Project</h2>
+
+    <!-- Video Embed -->
+    <div class="mb-10">
+      <div style="position: relative; padding-bottom: 64.61077844311377%; height: 0;">
+        <iframe src="https://www.loom.com/embed/b6c4c6aa855b45c1bc387ea58c7c14cc?sid=dcd4d4cf-943a-47ab-92e6-5122a89710a8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+      </div>
+    </div>
+
+    <!-- STAR Reflection -->
+    <section class="bg-white p-6 rounded-lg shadow mb-10">
+      <h3 class="text-2xl font-bold mb-4">STAR Reflection: Team Rocket Inventory Application</h3>
+
+      <p class="mb-4"><strong>Situation:</strong> We were tasked with building a full-stack inventory application—Team Rocket Store—using React for the frontend and Express/Sequelize for the backend. The goal was to allow users to add, view, update, and delete items in a store database, and to integrate this across a collaborative, multi-person project using GitHub Boards and PRs.
+</p>
+
+      <p class="mb-4"><strong>Task:</strong> As the backend lead, I was responsible for designing and implementing the Express API routes and Sequelize models to support complete CRUD functionality. Our team also needed frontend integration, test coverage, and effective coordination of responsibilities among members.
+ </p>
+
+      <p class="mb-4"><strong>Action:</strong> Backend (My Role):
+
+I built robust RESTful API routes to handle item creation (POST), reading (GET all and by ID), updating (PUT), and deletion (DELETE). For deletion, I enforced returning a 200 status on success or a 404 if the item didn’t exist.
+
+I defined the Sequelize model for items with fields name, price, category, description, and image.
+
+I implemented controller logic for each route, handling error cases gracefully.
+
+Frontend (Anthony’s Role):
+
+Anthony designed and implemented the React UI using wireframes to ensure clarity and simplicity.
+
+He built an item card component that dynamically displays name, price, category, and description.
+
+He implemented both list and single-item detail views with options to edit or delete items.
+
+He introduced Tailwind CSS for styling, enhancing the user interface and gaining experience with a modern CSS framework.
+
+Testing & ORM (Mohamed’s Role):
+
+Mohamed wrote end-to-end tests using Jest and Supertest to verify API behavior:
+
+POST to add and confirm new items
+
+PUT to update and validate changes
+
+DELETE to remove items and ensure they no longer exist
+
+GET endpoints to list items and fetch by ID
+
+He also integrated Sequelize into our test setup to confirm real database state.
+
+Team Collaboration:
+
+We used GitHub Boards to assign tasks and track progress: I worked on backend routes, Anthony implemented UI components, and Mohamed handled tests/ORM.
+
+We submitted Pull Requests for each feature, reviewed each other's code, and resolved merge conflicts—giving me firsthand experience resolving Git issues and improving our process.
+      <p class="mb-4"><strong>Result:</strong> We successfully delivered a fully functional inventory app with polished UI and backend functionality.
+
+The frontend and backend were tightly integrated, enabling create/read/update/delete operations in real time.
+
+Automated tests validated our API endpoints, saving manual testing time and boosting confidence.
+
+Anthony’s UI—especially using Tailwind—made the application clean and intuitive.
+
+Our use of GitHub workflows and task boards elevated team coordination and conflict resolution skills.
+
+Personally, I deepened my expertise in Express, Sequelize modeling, REST API design, and collaborative coding practices. </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-10">
+    <div class="max-w-7xl mx-auto px-4 py-6 text-center text-gray-600">
+      &copy; <span id="year"></span> Salman Afsal. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
