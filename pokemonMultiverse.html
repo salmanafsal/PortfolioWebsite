@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App – Project Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">My Portfolio</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="text-gray-700 hover:text-blue-500">Home</a>
+        <a href="projects.html" class="text-gray-700 hover:text-blue-500">Projects</a>
+        <a href="professionalexperience.html" class="text-gray-700 hover:text-blue-500">About</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-4 py-10">
+    <h2 class="text-3xl font-bold mb-6 text-center">Pokemon Multiverse: Demo</h2>
+
+    <!-- Video Embed -->
+    <div class="mb-10">
+      <div style="position: relative; padding-bottom: 64.61077844311377%; height: 0;">
+        <iframe src="https://www.loom.com/embed/fe1f325d6590410287211337a60568e8?sid=793fafd7-b036-4d49-a9b3-6420c023c7be" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+      </div>
+    </div>
+
+    <!-- STAR Reflection -->
+    <section class="bg-white p-6 rounded-lg shadow mb-10">
+      <h3 class="text-2xl font-bold mb-4"> STAR Reflection – Pokémon Squad Feature</h3>
+
+      <p class="mb-4"><strong>Situation:</strong> We needed to enhance a FastAPI-based Pokémon app so that users could build a squad of Pokémon using server-rendered HTML. The requirements were:
+
+Retrieve the full list of 151 Pokémon via a FastAPI endpoint.
+
+Allow users to add Pokémon to their squad up to a maximum of six.
+
+Display the current squad on the same page.
+
+Show an error message if the user attempts to select more than six Pokémon.
+
+(Bonus) Enable a “Battle” button once at least two Pokémon are selected.</p>
+
+      <p class="mb-4"><strong>Task:</strong> My role was to implement the squad-building logic using FastAPI backend and HTML templates—without using React or client-side frameworks. I had to:
+
+Design endpoints to handle fetching Pokémon and updating the squad selection on the backend.
+
+Use server-side HTML templating to render the list of Pokémon and the squad dynamically.
+
+Enforce the maximum squad constraint and prevent duplicate entries.
+
+Render error messages and update the “Battle” button state based on squad size.
+
+ </p>
+
+      <p class="mb-4"><strong>Action:</strong> API & Templating: Created FastAPI GET / endpoint to load all Pokémon into an HTML template using Jinja2. A POST /add endpoint handled form submissions to add Pokémon to the squad.
+
+Server-Side Logic: Employed session or simple in-memory state to track the user’s squad. The add handler verified uniqueness and enforced the six-Pokémon limit. If the squad was already full or contained the selected Pokémon, the page was re-rendered with appropriate error text.
+
+Conditional Rendering: In the Jinja2 template, I looped through the squad state to render selected Pokémon cards. The “Battle” button was rendered disabled or enabled based on len(squad) >= 2.
+
+Error Feedback: Embedded error message alerts in the template when the POST handler detected rule violations.
+      <p class="mb-4"><strong>Result:</strong></p>
+<section>
+  <ul class="list-disc list-inside text-gray-700">
+    <li><strong>Functional Feature:</strong> Users can now build a squad by <strong>adding</strong> up to six unique Pokémon, with real-time feedback and no need for client-side frameworks.</li>
+    <li><strong>User Experience:</strong> The app cleanly renders squad additions, changes, and error messages on each request cycle—all handled server‑side.</li>
+    <li><strong>Future‑Ready:</strong> The “Battle” button’s enabled/disabled state naturally supports <strong>adding</strong> Pokémon to a server‑side battle queue using FastAPI in the future.</li>
+    <li><strong>Skill Growth:</strong> This setup deepened my expertise in <strong>adding</strong> robust FastAPI routes, server‑side templating with Jinja2, and managing form‑driven UI logic without frontend frameworks.</li>
+  </ul>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-10">
+    <div class="max-w-7xl mx-auto px-4 py-6 text-center text-gray-600">
+      &copy; <span id="year"></span> Salman Afsal. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
