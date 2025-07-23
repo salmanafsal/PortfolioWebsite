@@ -32,6 +32,17 @@
         <iframe src="https://www.loom.com/embed/b6c4c6aa855b45c1bc387ea58c7c14cc?sid=dcd4d4cf-943a-47ab-92e6-5122a89710a8" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
       </div>
     </div>
+    <div class="flex justify-center mb-6">
+  <a
+    href="https://github.com/MV-SWE-Fiserv-US/group-full-stack-inventory-project-team-rocket"
+    class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition"
+  >
+    Github repo
+  </a>
+
+  
+</div>
+
 
     <!-- STAR Reflection -->
     <section class="bg-white p-6 rounded-lg shadow mb-10">
@@ -43,43 +54,40 @@
       <p class="mb-4"><strong>Task:</strong> As the backend lead, I was responsible for designing and implementing the Express API routes and Sequelize models to support complete CRUD functionality. Our team also needed frontend integration, test coverage, and effective coordination of responsibilities among members.
  </p>
 
-      <p class="mb-4"><strong>Action:</strong> Backend (My Role):
+      <p class="mb-4"><strong>Action:</strong>
 
-I built robust RESTful API routes to handle item creation (POST), reading (GET all and by ID), updating (PUT), and deletion (DELETE). For deletion, I enforced returning a 200 status on success or a 404 if the item didn’t exist.
+<section>
+  <ul class="list-disc list-inside text-gray-700 mb-4">
+    <p class="mb-4"> <strong> Backend: </strong></p>
+    <li>   I built robust RESTful API routes to handle item creation (POST), reading (GET all and by ID), updating (PUT), and deletion (DELETE). For deletion, I enforced returning a 200 status on success or a 404 if the item didn’t exist.</li>
+    <li>I defined the Sequelize model for items with fields name, price, category, description, and image.</li>
+    <li>I implemented controller logic for each route, handling error cases gracefully.</li>
+    <li class="mb-4">Skill Growth: This setup deepened my expertise in <strong>adding</strong> robust FastAPI routes, server‑side templating with Jinja2, and managing form‑driven UI logic without frontend frameworks.</li>
+    
+    <p class="mb-4"> <strong> Frontend: </strong></p>
+    
+    <li> Anthony designed and implemented the React UI using wireframes to ensure clarity and simplicity.</li>
+    <li> He built an item card component that dynamically displays name, price, category, and description.</li>
+    <li> He implemented both list and single-item detail views with options to edit or delete items.</li>
+    <li class="mb-4">He introduced Tailwind CSS for styling, enhancing the user interface and gaining experience with a modern CSS framework.</li>
+    <p class="mb-4"> <strong> Testing & ORM: </strong></p>
+    <li> Mohamed wrote end-to-end tests using Jest and Supertest to verify API behavior</li>
+    <li> Added test utilizing POST method to add and confirm new items</li>
+    <li> Added test utilizing PUT method to update and validate changes</li>
+    <li> Added test utilizing DELETE method to remove items and ensure they no longer exist</li>
+    <li> Added test utilizing GET method endpoints to list items and fetch by ID </li>
+    <li class="mb-4"> He also integrated Sequelize into our test setup to confirm real database state. </li>
+<p class="mb-4"> <strong> Team Collaboration: </strong></p>
+<li> We used GitHub Boards to assign tasks and track progress: I worked on backend routes, Anthony implemented UI components, and Mohamed handled tests/ORM.
+</li>
+    <li> We submitted Pull Requests for each feature, reviewed each other's code, and resolved merge conflicts—giving me firsthand experience resolving Git issues and improving our process.
+</li>
+    
+  </ul>
+</section>
 
-I defined the Sequelize model for items with fields name, price, category, description, and image.
 
-I implemented controller logic for each route, handling error cases gracefully.
 
-Frontend (Anthony’s Role):
-
-Anthony designed and implemented the React UI using wireframes to ensure clarity and simplicity.
-
-He built an item card component that dynamically displays name, price, category, and description.
-
-He implemented both list and single-item detail views with options to edit or delete items.
-
-He introduced Tailwind CSS for styling, enhancing the user interface and gaining experience with a modern CSS framework.
-
-Testing & ORM (Mohamed’s Role):
-
-Mohamed wrote end-to-end tests using Jest and Supertest to verify API behavior:
-
-POST to add and confirm new items
-
-PUT to update and validate changes
-
-DELETE to remove items and ensure they no longer exist
-
-GET endpoints to list items and fetch by ID
-
-He also integrated Sequelize into our test setup to confirm real database state.
-
-Team Collaboration:
-
-We used GitHub Boards to assign tasks and track progress: I worked on backend routes, Anthony implemented UI components, and Mohamed handled tests/ORM.
-
-We submitted Pull Requests for each feature, reviewed each other's code, and resolved merge conflicts—giving me firsthand experience resolving Git issues and improving our process.
       <p class="mb-4"><strong>Result:</strong> We successfully delivered a fully functional inventory app with polished UI and backend functionality.
 
 The frontend and backend were tightly integrated, enabling create/read/update/delete operations in real time.

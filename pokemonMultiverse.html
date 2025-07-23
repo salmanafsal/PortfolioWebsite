@@ -33,42 +33,72 @@
       </div>
     </div>
 
+    <div class="flex justify-center mb-6">
+  <a
+    href="https://github.com/salmanafsal/pokemon-multiverse"
+    class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition"
+  >
+    Github repo
+  </a>
+  </div>
     <!-- STAR Reflection -->
     <section class="bg-white p-6 rounded-lg shadow mb-10">
       <h3 class="text-2xl font-bold mb-4"> STAR Reflection – Pokémon Squad Feature</h3>
 
-      <p class="mb-4"><strong>Situation:</strong> We needed to enhance a FastAPI-based Pokémon app so that users could build a squad of Pokémon using server-rendered HTML. The requirements were:
+      <p class="mb-4"><strong>Situation:</strong> We needed to enhance a FastAPI-based Pokémon app so that users could build a squad of Pokémon using server-rendered HTML. 
+    <section>
+  <ul class="list-disc list-inside text-gray-700 mb-4">
+    <li> Retrieve the full list of 151 Pokémon via a FastAPI endpoint.</li>
+    <li> Allow users to add Pokémon to their squad up to a maximum of six.</li>
+    <li> Display the current squad on the same page.
+</li>
+    <li> Show an error message if the user attempts to select more than six Pokémon.
+</li>
+<li> (Bonus) Enable a “Battle” button once at least two Pokémon are selected.
+ </li>
+  </ul>
+</section>
+</p>   
+        
+      <p class="mb-4"><strong>Task:</strong> My role was to implement the squad-building logic using FastAPI backend and HTML templates—without using React or client-side frameworks. 
+        
+ <section>
+  <ul class="list-disc list-inside text-gray-700 mb-4">
+    <li> 
+Designed endpoints to handle fetching Pokémon and updating the squad selection on the backend.</li>
+    <li>Used server-side HTML templating to render the list of Pokémon and the squad dynamically.</li>
+    <li> Rendered error messages and update the “Battle” button state based on squad size.
+</li>
+    <li> Showed an error message if the user attempts to select more than six Pokémon.
+</li>
+<li> (Bonus) Enabled a “Battle” button once at least two Pokémon are selected.
+ </li>
+  </ul>
+</section>
 
-Retrieve the full list of 151 Pokémon via a FastAPI endpoint.
-
-Allow users to add Pokémon to their squad up to a maximum of six.
-
-Display the current squad on the same page.
-
-Show an error message if the user attempts to select more than six Pokémon.
-
-(Bonus) Enable a “Battle” button once at least two Pokémon are selected.</p>
-
-      <p class="mb-4"><strong>Task:</strong> My role was to implement the squad-building logic using FastAPI backend and HTML templates—without using React or client-side frameworks. I had to:
-
-Design endpoints to handle fetching Pokémon and updating the squad selection on the backend.
-
-Use server-side HTML templating to render the list of Pokémon and the squad dynamically.
-
-Enforce the maximum squad constraint and prevent duplicate entries.
-
-Render error messages and update the “Battle” button state based on squad size.
 
  </p>
 
-      <p class="mb-4"><strong>Action:</strong> API & Templating: Created FastAPI GET / endpoint to load all Pokémon into an HTML template using Jinja2. A POST /add endpoint handled form submissions to add Pokémon to the squad.
+      <p class="mb-4"><strong>Action:</strong> 
 
-Server-Side Logic: Employed session or simple in-memory state to track the user’s squad. The add handler verified uniqueness and enforced the six-Pokémon limit. If the squad was already full or contained the selected Pokémon, the page was re-rendered with appropriate error text.
+<section>
+  <ul class="list-disc list-inside text-gray-700 mb-4">
+    <li> 
+<strong>API & Templating</strong>: Created FastAPI GET / endpoint to load all Pokémon into an HTML template using Jinja2. A POST /add endpoint handled form submissions to add Pokémon to the squad.
+</li>
+    <li> <strong>Server-Side Logic</strong>: Employed session or simple in-memory state to track the user’s squad. The add handler verified uniqueness and enforced the six-Pokémon limit. If the squad was already full or contained the selected Pokémon, the page was re-rendered with appropriate error text.
+</li>
+    <li> <strong> Conditional Rendering </strong>: In the Jinja2 template, I looped through the squad state to render selected Pokémon cards. The “Battle” button was rendered disabled or enabled based on len(squad) >= 2.
 
-Conditional Rendering: In the Jinja2 template, I looped through the squad state to render selected Pokémon cards. The “Battle” button was rendered disabled or enabled based on len(squad) >= 2.
+</li>
+    <li> <strong> Error Feedback </strong>: Embedded error message alerts in the template when the POST handler detected rule violations.
 
-Error Feedback: Embedded error message alerts in the template when the POST handler detected rule violations.
-      <p class="mb-4"><strong>Result:</strong></p>
+</li>
+  </ul>
+</section>
+
+
+<p class="mb-4"><strong>Result:</strong></p>
 <section>
   <ul class="list-disc list-inside text-gray-700">
     <li><strong>Functional Feature:</strong> Users can now build a squad by <strong>adding</strong> up to six unique Pokémon, with real-time feedback and no need for client-side frameworks.</li>
