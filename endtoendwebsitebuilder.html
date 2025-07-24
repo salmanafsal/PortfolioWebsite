@@ -75,73 +75,27 @@
 
     <!-- STAR Reflection -->
     <section class="bg-white p-6 rounded-lg shadow mb-10">
-      <h3 class="text-2xl font-bold mb-4">STAR Reflection: Back-End Development for AI-Assisted Website Builder</h3>
+      <h3 class="text-2xl font-bold mb-4">Release Schedule: AI-Assisted Website Builder</h3>
 
-      <p class="mb-4"><strong>Situation:</strong> The project involves an AI-assisted website builder designed to streamline content creation for merchants. Key components are already in place:
+      <p class="mb-4"> Currently, the project is in its development stage. We are collaborating closely with both the product and design teams to fully refine the requirements. We’ve begun exploratory work on generating service-oriented images—using merchant inventory data and associated metadata—to help attract clients. At the moment, this image-generation process resides within a Jupyter notebook and is still in the experimentation and testing phase.
+</p>
+<p class="mb-4">
+<strong>Future Learnings & Next Steps: </strong>
 
-Core AI Functionality: The system currently leverages Large Language Models (LLMs) to automatically generate "about us" text and welcome messages, collaborating with a product team for quality assurance.
+Transition the image-generation prototype from Jupyter to a backend microservice with a clean, production-ready API.
 
-Backend Infrastructure: Built on FastAPI and deployed to GCP Cloud Run, with a central DS web builder gateway sandbox for routing requests.
+Establish a seamless workflow to inject generated images into the merchant dashboard, ensuring smooth integration with existing systems.
 
-Data Management: MongoDB is utilized for persistent storage (CRUD operations), and Redis cache is implemented for safety and rate limiting, preventing excessive text generation.
+Optimize the image-generation pipeline for performance and scalability, potentially incorporating caching or batching for high-throughput usage.
 
-CI/CD Pipeline: Jenkins automates the process of building Docker images and pushing them to Google Cloud Run, facilitating continuous deployment.
-
-Emerging Feature: An experimental feature for AI-generated images based on merchant metadata has been explored, but these images currently show visible AI-generated characteristics and are not yet ready for production release.
+Gather user feedback and conduct A/B testing to evaluate which generated images drive the best client engagement.
 </p>
 
-      <p class="mb-4"><strong>Task:</strong> The primary goal is to further develop and enhance the AI-assisted website builder, focusing on improving the quality of AI-generated content and ensuring the stability and scalability of the underlying platform. Specific tasks include:
+ <p class="mb-4">   
+<strong>Conclusive Note: </strong>
+This project remains in active development with a strong cross-functional focus. The foundational work on image generation is a promising addition that will enhance merchant-facing experiences once production-ready. As we continue refining feature requirements and integrating capabilities, we look forward to launching a polished, automated image generator in the near future to further improve engagement and business outcomes.  
 
-Content Refinement: Continue to ensure the LLM-generated "about us" and welcome messages are high-quality and appropriate for merchant use.
-
-AI Image Production Readiness: Address the visible "AI-generated" appearance of images to make them suitable for a seamless user experience and enable their eventual release.
-
-Platform Optimization: Maintain and optimize the backend services, data persistence, and caching mechanisms for performance and reliability.
-
-Streamline CI/CD: Ensure the Jenkins-driven deployment pipeline remains efficient and robust for rapid iteration.
- </p>
-
-      <p class="mb-4"><strong>Action:</strong> To achieve the project goals, the following actions will be undertaken:
-
-Refine LLM Text Generation:
-
-Maintain close collaboration with the product team to gather feedback and continuously refine prompts and LLM models for "about us" and welcome message generation.
-
-Implement user feedback loops to fine-tune the AI's output for better contextual relevance and tone.
-
-Develop Production-Ready AI Images:
-
-Research & Experimentation: Investigate and apply advanced AI image generation techniques (e.g., newer models, additional training data, style transfer, inpainting) to mitigate the "AI-generated" look.
-
-Post-Processing: Explore image post-processing techniques to enhance realism and visual appeal.
-
-User Validation: Conduct internal and limited external testing to validate the quality and merchant acceptance of AI-generated images before broader release.
-
-Enhance Backend & Infrastructure:
-
-Performance Monitoring: Continuously monitor the performance of MongoDB and Redis cache to identify and address any bottlenecks.
-
-Scalability Review: Periodically review and optimize FastAPI code and GCP Cloud Run configurations to ensure scalability as user demand grows.
-
-Security Audits: Conduct regular security reviews of all backend endpoints and data handling processes.
-
-Strengthen CI/CD Pipeline:
-
-Automated Testing: Expand automated testing within the Jenkins pipeline to ensure new features and changes do not introduce regressions.
-
-Deployment Efficiency: Optimize Docker image sizes and Jenkins job execution times for faster and more reliable deployments to GCP Cloud Run. </p>
-
-      <p class="mb-4"><strong>Result:</strong> Successful execution of these actions will lead to significant results for the AI-assisted website builder:
-
-Enhanced Merchant Experience: Merchants will benefit from an even more intuitive and powerful website builder, capable of generating high-quality, relevant text and, eventually, unique, production-ready AI-generated images.
-
-Increased Content Quality: The platform will consistently deliver polished and appropriate "about us" and welcome messages, reducing the manual effort required from merchants.
-
-Unique Customization Options: The integration of improved AI-generated images will provide merchants with novel and compelling visual content options, helping their websites stand out.
-
-Robust & Scalable System: The backend infrastructure, backed by MongoDB and Redis, will handle increasing loads efficiently, ensuring a reliable and fast experience.
-
-Rapid Feature Delivery: A streamlined CI/CD pipeline will enable faster development cycles and quicker deployment of new features and improvements to merchants. </p>
+</p>
     </section>
   </main>
 
