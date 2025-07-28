@@ -39,69 +39,62 @@
 
       <p class="mb-4"><strong>Situation:</strong> The project involves an AI-assisted website builder designed to streamline content creation for merchants. Key components are already in place:
 
-Core AI Functionality: The system currently leverages Large Language Models (LLMs) to automatically generate "about us" text and welcome messages, collaborating with a product team for quality assurance.
-
-Backend Infrastructure: Built on FastAPI and deployed to GCP Cloud Run, with a central DS web builder gateway sandbox for routing requests.
-
-Data Management: MongoDB is utilized for persistent storage (CRUD operations), and Redis cache is implemented for safety and rate limiting, preventing excessive text generation.
-
-CI/CD Pipeline: Jenkins automates the process of building Docker images and pushing them to Google Cloud Run, facilitating continuous deployment.
-
-Emerging Feature: An experimental feature for AI-generated images based on merchant metadata has been explored, but these images currently show visible AI-generated characteristics and are not yet ready for production release.
+        <section class="mb-4">
+  <ul class="list-disc list-inside text-gray-700">
+    <li><strong>Core AI Functionality</strong> — The system currently leverages Large Language Models (LLMs) to automatically generate "About Us" text and welcome messages, collaborating with a product team for quality assurance.</li>
+    <li><strong>Backend Infrastructure</strong> — Built on FastAPI and deployed to GCP Cloud Run, with a central DS web builder gateway sandbox for routing requests.</li>
+    <li><strong>Data Management</strong> — MongoDB is utilized for persistent storage (CRUD operations), and Redis cache is implemented for safety and rate limiting, preventing excessive text generation.</li>
+    <li><strong>CI/CD Pipeline</strong> — Jenkins automates the process of building Docker images and pushing them to Google Cloud Run, facilitating continuous deployment.</li>
+    <li><strong>Emerging Feature</strong> — An experimental feature for AI-generated images based on merchant metadata has been explored, but these images currently show visible AI-generated characteristics and are not yet ready for production release.</li>
+  </ul>
+</section>
 </p>
 
       <p class="mb-4"><strong>Task:</strong> The primary goal is to further develop and enhance the AI-assisted website builder, focusing on improving the quality of AI-generated content and ensuring the stability and scalability of the underlying platform. Specific tasks include:
 
-Content Refinement: Continue to ensure the LLM-generated "about us" and welcome messages are high-quality and appropriate for merchant use.
-
-AI Image Production Readiness: Address the visible "AI-generated" appearance of images to make them suitable for a seamless user experience and enable their eventual release.
-
-Platform Optimization: Maintain and optimize the backend services, data persistence, and caching mechanisms for performance and reliability.
-
-Streamline CI/CD: Ensure the Jenkins-driven deployment pipeline remains efficient and robust for rapid iteration.
+        <section class="mb-4">
+  <ul class="list-disc list-inside text-gray-700">
+    <li><strong>Content Refinement</strong> — Continue to ensure the LLM-generated "About Us" and welcome messages are high quality and appropriate for merchant use.</li>
+    <li><strong>AI Image Production Readiness</strong> — Address the visible "AI‑generated" appearance of images to make them suitable for a seamless user experience and enable their eventual release.</li>
+    <li><strong>Platform Optimization</strong> — Maintain and optimize backend services, data persistence, and caching mechanisms (e.g. MongoDB, Redis) for enhanced performance and reliability.</li>
+    <li><strong>Streamline CI/CD</strong> — Ensure the Jenkins-driven deployment pipeline remains efficient, robust, and scalable for rapid iteration and deployment.</li>
+  </ul>
+</section>
  </p>
 
       <p class="mb-4"><strong>Action:</strong> To achieve the project goals, the following actions will be undertaken:
 
-Refine LLM Text Generation:
-
-Maintain close collaboration with the product team to gather feedback and continuously refine prompts and LLM models for "about us" and welcome message generation.
-
-Implement user feedback loops to fine-tune the AI's output for better contextual relevance and tone.
-
-Develop Production-Ready AI Images:
-
-Research & Experimentation: Investigate and apply advanced AI image generation techniques (e.g., newer models, additional training data, style transfer, inpainting) to mitigate the "AI-generated" look.
-
-Post-Processing: Explore image post-processing techniques to enhance realism and visual appeal.
-
-User Validation: Conduct internal and limited external testing to validate the quality and merchant acceptance of AI-generated images before broader release.
-
-Enhance Backend & Infrastructure:
-
-Performance Monitoring: Continuously monitor the performance of MongoDB and Redis cache to identify and address any bottlenecks.
-
-Scalability Review: Periodically review and optimize FastAPI code and GCP Cloud Run configurations to ensure scalability as user demand grows.
-
-Security Audits: Conduct regular security reviews of all backend endpoints and data handling processes.
-
-Strengthen CI/CD Pipeline:
-
-Automated Testing: Expand automated testing within the Jenkins pipeline to ensure new features and changes do not introduce regressions.
-
-Deployment Efficiency: Optimize Docker image sizes and Jenkins job execution times for faster and more reliable deployments to GCP Cloud Run. </p>
-
+<section class="mb-4">
+  <ul class="list-disc list-inside text-gray-700">
+    <li><strong>Refine LLM Text Generation</strong> — Maintain close collaboration with the product team to continuously gather feedback and refine prompts and LLM models for “About Us” and welcome message creation.</li>
+    <li><strong>User Feedback Loop</strong> — Implement preference-based feedback mechanisms where merchants rate multiple prompt outputs to guide prompt improvement, which aligns with recent research on human-feedback-driven LLM optimization like APOHF and SIPDO :contentReference[oaicite:1]{index=1}.</li>
+    <li><strong>Self‑Refine / Iterative Prompting</strong> — Use iterative self-refinement techniques (like Self‑Refine), where initial LLM outputs are self-critiqued and improved over multiple passes to enhance accuracy and tone :contentReference[oaicite:2]{index=2}.</li>
+    <li><strong>Develop Production‑Ready AI Images</strong> — Explore post-processing techniques (e.g. sharpening, noise addition, style transfer) to reduce “AI-generated” artifacts in visuals and improve realism, a widely adopted best practice in Stable Diffusion workflows :contentReference[oaicite:3]{index=3}.</li>
+    <li><strong>User Validation</strong> — Conduct internal and limited live testing for AI-generated images to assess merchant acceptance before wider release.</li>
+    <li><strong>Enhance Backend & Infrastructure</strong> — Focus on performance and scalability: monitor MongoDB and Redis usage, optimize FastAPI routes and Cloud Run configurations, and conduct security audits of data handling services to mitigate rate-limiting or exposure risks.</li>
+    <li><strong>Strengthen CI/CD Pipeline</strong> — Expand automated testing within the Jenkins pipeline and optimize Docker image sizes and build execution times for faster, robust deployments to GCP Cloud Run.</li>
+  </ul>
+</section>
       <p class="mb-4"><strong>Result:</strong> Successful execution of these actions will lead to significant results for the AI-assisted website builder:
-
-Enhanced Merchant Experience: Merchants will benefit from an even more intuitive and powerful website builder, capable of generating high-quality, relevant text and, eventually, unique, production-ready AI-generated images.
-
-Increased Content Quality: The platform will consistently deliver polished and appropriate "about us" and welcome messages, reducing the manual effort required from merchants.
-
-Unique Customization Options: The integration of improved AI-generated images will provide merchants with novel and compelling visual content options, helping their websites stand out.
-
-Robust & Scalable System: The backend infrastructure, backed by MongoDB and Redis, will handle increasing loads efficiently, ensuring a reliable and fast experience.
-
-Rapid Feature Delivery: A streamlined CI/CD pipeline will enable faster development cycles and quicker deployment of new features and improvements to merchants. </p>
+<section class="mb-4">
+  <ul class="list-disc list-inside text-gray-700">
+    <li>
+      <strong>Enhanced Merchant Experience</strong> — Merchants will benefit from an even more intuitive and powerful website builder, capable of generating high-quality, relevant text and, eventually, unique, production-ready AI-generated images.
+    </li>
+    <li>
+      <strong>Increased Content Quality</strong> — The platform will consistently deliver polished and appropriate “About Us” and welcome messages, reducing the manual effort required from merchants.
+    </li>
+    <li>
+      <strong>Unique Customization Options</strong> — The integration of improved AI-generated images will provide merchants with novel and compelling visual content options, helping their websites stand out.
+    </li>
+    <li>
+      <strong>Robust & Scalable System</strong> — The backend infrastructure, backed by MongoDB and Redis, will handle increasing loads efficiently, ensuring a reliable and fast experience.
+    </li>
+    <li>
+      <strong>Rapid Feature Delivery</strong> — A streamlined CI/CD pipeline will enable faster development cycles and quicker deployment of new features and improvements to merchants.
+    </li>
+  </ul>
+</section>
     </section>
   </main>
 
